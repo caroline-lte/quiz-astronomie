@@ -27,7 +27,7 @@ let questionsLevel1 = [
         correctAnswer: "Vénus",
         anecdoteCorrect: "Vénus est la planète la plus chaude de notre système solaire, avec des températures de surface pouvant atteindre 465°C. Cela est dû à son atmosphère dense, principalement composée de dioxyde de carbone, qui crée un effet de serre extrême.",
         anecdoteIncorrect: "La bonne réponse est Vénus. Bien que Mercure soit la planète la plus proche du Soleil, Vénus est la plus chaude en raison de son atmosphère épaisse et de son effet de serre incontrôlé.",
-    imageUrl : "images/venus.jpg"
+    imageUrl : "images/venus.jpg",
     },
     
     {
@@ -36,7 +36,7 @@ let questionsLevel1 = [
         correctAnswer: "Jupiter",
         anecdoteCorrect: "La Grande Tache Rouge de Jupiter est une tempête massive qui fait rage depuis des siècles. Elle est si grande qu'elle pourrait englober plusieurs Terres.",
         anecdoteIncorrect: "La bonne réponse est Jupiter. La Grande Tache Rouge est une tempête géante qui existe depuis au moins 350 ans.",
-        imageUrl: "images/tache.png"
+        imageUrl: "images/tache.png",
     },
     {
         question: "Combien de planètes dans notre système solaire ont des anneaux visibles ?",
@@ -44,7 +44,7 @@ let questionsLevel1 = [
         correctAnswer: "4",
         anecdoteCorrect: "Les quatre planètes géantes (Saturne, Jupiter, Uranus et Neptune) possèdent des anneaux, mais ceux de Saturne sont les plus impressionnants.",
         anecdoteIncorrect: "La bonne réponse est 4. Saturne, Jupiter, Uranus et Neptune ont des anneaux visibles, bien que ceux de Saturne soient les plus spectaculaires.",
-        imageUrl: "images/anneaux.jpg"
+        imageUrl: "images/anneaux.jpg",
     },
     {
         question: "Pourquoi ne voyons-nous qu'une seule face de la Lune depuis la Terre ?",
@@ -55,7 +55,7 @@ let questionsLevel1 = [
         correctAnswer: "La Lune a une seule face visible à cause de sa rotation synchronisée avec la Terre",
         anecdoteCorrect: "La Lune effectue une rotation sur elle-même en exactement le même temps qu'elle met pour orbiter autour de la Terre, un phénomène appelé rotation synchrone.",
         anecdoteIncorrect: "La bonne réponse est que la Lune a une rotation synchrone avec la Terre. Cela signifie qu'elle met le même temps pour tourner sur elle-même que pour faire le tour de la Terre, ce qui fait que nous voyons toujours la même face.",
-        imageUrl: "images/lune.jpg"
+        imageUrl: "images/lune.jpg",
     },
     
     {
@@ -64,7 +64,7 @@ let questionsLevel1 = [
         correctAnswer: "Jupiter",
         anecdoteCorrect: "Jupiter est une planète géante gazeuse et possède une masse plus de deux fois et demie plus grande que celle de toutes les autres planètes du système solaire combinées.",
         anecdoteIncorrect: "La bonne réponse est Jupiter. Elle est la plus grande planète de notre système solaire et possède une atmosphère constituée principalement d'hydrogène et d'hélium.",
-        imageUrl: "images/taille.jpg"
+        imageUrl: "images/taille.jpg",
     },
     {
         question: "Quel est le nom de la galaxie la plus proche de la Voie Lactée ?",
@@ -72,7 +72,7 @@ let questionsLevel1 = [
         correctAnswer: "Galaxie d'Andromède",
         anecdoteCorrect: "La galaxie d'Andromède est située à environ 2,5 millions d'années-lumière de la Terre et est la plus grande galaxie du groupe local, qui comprend la Voie Lactée.",
         anecdoteIncorrect: "La bonne réponse est la galaxie d'Andromède. Elle est notre voisine la plus proche et se rapproche lentement de la Voie Lactée.",
-        imageUrl: "images/andro.jpg"
+        imageUrl: "images/andro.jpg",
     },
     
     {
@@ -81,7 +81,7 @@ let questionsLevel1 = [
         correctAnswer: "Apollo 11",
         anecdoteCorrect: "Apollo 11 a été la première mission à poser des astronautes sur la Lune en 1969. Neil Armstrong et Buzz Aldrin ont fait l'histoire en devenant les premiers humains à marcher sur la surface lunaire.",
         anecdoteIncorrect: "La bonne réponse est Apollo 11. Cette mission a permis à Neil Armstrong et Buzz Aldrin de faire un pas géant pour l'humanité en 1969.",
-        imageUrl: "image/appolo.jpg"
+        imageUrl: "image/appolo.jpg",
     },
     
     {
@@ -90,7 +90,7 @@ let questionsLevel1 = [
         correctAnswer: "Azote",
         anecdoteCorrect: "L'azote compose environ 78% de l'atmosphère terrestre, ce qui en fait le principal gaz. L'oxygène ne représente que 21%.",
         anecdoteIncorrect: "La bonne réponse est l'azote. L'atmosphère terrestre est composée à 78% d'azote, et l'oxygène représente seulement 21%.",
-        imageUrl: "image/azote.jpg"
+        imageUrl: "image/azote.jpg",
     },
 
 ];
