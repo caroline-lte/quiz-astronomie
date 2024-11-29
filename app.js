@@ -10,14 +10,16 @@ let questionsLevel1 = [
         choices: ["Venus", "Terre", "Mercure", "Mars"],
         correctAnswer: "Mercure",
         anecdoteCorrect: "Mercure est la planète la plus proche du Soleil, mais elle n'a pas d'atmosphère significative, ce qui signifie qu'elle connaît des températures extrêmes.",
-        anecdoteIncorrect: "La bonne réponse est Mercure. Elle est la plus proche du Soleil et connaît des températures extrêmement chaudes pendant la journée et très froides la nuit."
+        anecdoteIncorrect: "La bonne réponse est Mercure. Elle est la plus proche du Soleil et connaît des températures extrêmement chaudes pendant la journée et très froides la nuit.",
+        imageUrl: "images/mercure.jpg", // Lien vers l'image    
     },
-    {
+        {
         question: "Quelle navette spatiale américaine a explosé en plein vol en 1986, en direct à la télévision ?",
         choices: ["Atlantis", "Columbia", "Discovery", "Challenger"],
         correctAnswer: "Challenger",
         anecdoteCorrect: "La navette Challenger a explosé 73 secondes après son lancement le 28 janvier 1986. Cette tragédie a coûté la vie aux sept membres d'équipage, dont Christa McAuliffe, une enseignante qui devait être la première civile dans l'espace.",
-        anecdoteIncorrect: "La bonne réponse est Challenger. La tragédie a été un événement marquant de l'histoire spatiale, soulignant la nécessité de réévaluer les conditions de sécurité dans les missions spatiales."
+        anecdoteIncorrect: "La bonne réponse est Challenger. La tragédie a été un événement marquant de l'histoire spatiale, soulignant la nécessité de réévaluer les conditions de sécurité dans les missions spatiales.",
+        imageUrl: "images/crash.jpg", // Lien vers l'i
     },
     {
         question: "Quelle planète du système solaire est la plus chaude ?",
@@ -328,59 +330,61 @@ function startQuizLevel4() {
     nextQuestion(0, questionsLevel3);
 }
 
-// Fonction pour afficher la question suivante
 function nextQuestion(index, questions) {
     if (index >= questions.length) {
-        // Lorsque le quiz est terminé, afficher un message de fin et un bouton pour revenir à l'écran principal
-        document.querySelector('main').innerHTML = `
-            <h2>Quiz terminé !</h2>
-            <button id="returnToMain">Retour à l'écran principal</button>
-        `;
-
-        // Ajouter un événement de clic pour le bouton de retour
+        document.querySelector('main').innerHTML = 
+            `<h2>Quiz terminé !</h2>
+            <button id="returnToMain">Retour à l'écran principal</button>`;
+        
         document.getElementById('returnToMain').addEventListener('click', function() {
-            // Rediriger vers l'écran principal ou réinitialiser le contenu
-            location.reload();  // Cela recharge la page, renvoyant l'utilisateur à l'écran principal.
+            location.reload();
         });
 
         return;
     }
 
     const question = questions[index];
-    let questionHTML = `<h2 class="quiz-question">${question.question}</h2>`; // Ajoutez ici la classe quiz-question
-
-    question.choices.forEach((choice) => {
-        questionHTML += `<button class="answer-button" data-answer="${choice}">${choice}</button><br>`;
-    });
+    let questionHTML = `
+        <h2 class="quiz-question">${question.question}</h2>
+        <div class="choices">
+            ${question.choices.map(choice => 
+                `<button class="answer-button" data-answer="${choice}">${choice}</button>`
+            ).join('<br>')}
+        </div>
+    `;
 
     document.querySelector('main').innerHTML = questionHTML;
 
     // Ajoute l'événement de clic pour les réponses après l'affichage des boutons
     document.querySelectorAll('.answer-button').forEach(button => {
         button.addEventListener('click', (e) => {
-            checkAnswer(e.target.getAttribute('data-answer'), question.correctAnswer, index, questions);
+            console.log(`Bouton cliqué : ${e.target.getAttribute('data-answer')}`);
+            const selectedAnswer = e.target.getAttribute('data-answer');
+            checkAnswer(selectedAnswer, question.correctAnswer, index, questions);
         });
     });
 }
+
+
 // Fonction pour vérifier la réponse et passer à la question suivante
 function checkAnswer(selected, correctAnswer, index, questions) {
     const question = questions[index];
     
     // Vérifie si la réponse est correcte
     if (selected === correctAnswer) {
-        showAlert("Bien Joué !"); // Affiche "Correct !" d'abord
+        showAlert("Bien Joué !", question.imageUrl); // Affiche "Correct !" d'abord
 
         // Délai pour afficher l'anecdote après "Correct !"
         setTimeout(function() {
-            showAlert(question.anecdoteCorrect); // Affiche l'anecdote pour la bonne réponse
+            showAlert(question.anecdoteCorrect, question.imageUrl); // Affiche l'anecdote pour la bonne réponse
         }, 2000); // 2 secondes d'attente avant de montrer l'anecdote
 
     } else {
-        showAlert("Mauvaise réponse! "); // Affiche la mauvaise réponse
+        showAlert("Mauvaise réponse! ", question.imageUrl); // Affiche la mauvaise réponse
 
         // Délai pour afficher l'anecdote après la mauvaise réponse
         setTimeout(function() {
-            showAlert(question.anecdoteIncorrect); // Affiche l'anecdote pour la mauvaise réponse
+            showAlert(question.anecdoteIncorrect, question.imageurl); // Affiche l'anecdote pour la mauvaise réponse
         }, 2000); // 2 secondes d'attente avant de montrer l'anecdote
     }
 
@@ -391,15 +395,25 @@ function checkAnswer(selected, correctAnswer, index, questions) {
 }
 
 // Fonction pour afficher la boîte de dialogue
-function showAlert(message) {
+function showAlert(message, imageUrl = null) {
     const alertBox = document.getElementById("custom-alert");
     const alertMessage = document.getElementById("alert-message");
+    const alertImage = document.querySelector("#question-image");
+    const closeButton = document.getElementById("close-alert");
+
     alertMessage.textContent = message; // Met à jour le message
+    if (imageUrl) {
+        alertImage.src = imageUrl; // Met à jour l'image si une URL est fournie
+        alertImage.style.display = "block"; // Affiche l'image
+    } else {
+        alertImage.style.display = "none"; // Cache l'image si aucune URL n'est fournie
+    }
     alertBox.classList.remove("hidden"); // Affiche la boîte
+
+    // Ajouter un événement au bouton "Fermer"
+    closeButton.addEventListener('click', () => {
+        alertBox.classList.add("hidden"); // Masque la boîte d'alerte
+    });
 }
 
-// Fonction pour cacher la boîte de dialogue
-document.getElementById("close-alert").addEventListener("click", function () {
-    const alertBox = document.getElementById("custom-alert");
-    alertBox.classList.add("hidden"); // Cache la boîte
-});
+

@@ -97,13 +97,24 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: black; /* Fond noir opaque avec un léger fond transparent, ajuste le 0.8 */
+    background-color: blackgit; /* Fond noir opaque avec un léger fond transparent, ajuste le 0.8 */
     padding: 20px;
     border-radius: 10px;
     color: white;
     font-size: 16px;
     z-index: 1000; /* Assure que la boîte de dialogue soit au-dessus des autres éléments */
 }
+#question-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid #ddd; /* Bordure discrète */
+    border-radius: 10px; /* Arrondi des bords */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+
 
 .alert-content {
     background-color: black; /* Assure que le fond de la boîte de dialogue est totalement noir */
