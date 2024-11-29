@@ -97,32 +97,38 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    background-color: black; /* Fond noir opaque avec un léger fond transparent, ajuste le 0.8 */
     padding: 20px;
-    border-radius: 5px;
-    z-index: 1000;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    z-index: 1000; /* Assure que la boîte de dialogue soit au-dessus des autres éléments */
 }
 
-#alert-message {
-    margin-bottom: 10px;
+.alert-content {
+    background-color: black; /* Assure que le fond de la boîte de dialogue est totalement noir */
+    color: white;  /* Texte en blanc */
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
+
 }
 
 #close-alert {
-    background-color: #db596e;
+    background-color: #e91e63; /* Rose pour le bouton "Fermer" */
     color: white;
-    border: none;
+    border: none; /* Enlève le rebord transparent */
     padding: 10px;
-    cursor: pointer;
     border-radius: 5px;
-    display: block;
-    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 #close-alert:hover {
-    background-color: #db596e;
+    background-color: #d81b60; /* Hover effect avec un rose plus foncé */
 }
+
+
 
 
 
