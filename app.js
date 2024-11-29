@@ -362,19 +362,44 @@ function nextQuestion(index, questions) {
         });
     });
 }
-
 // Fonction pour vérifier la réponse et passer à la question suivante
 function checkAnswer(selected, correctAnswer, index, questions) {
     const question = questions[index];
-
+    
+    // Vérifie si la réponse est correcte
     if (selected === correctAnswer) {
-        alert("Correct !");
-        alert(question.anecdoteCorrect); // Afficher l'anecdote pour la bonne réponse
+        showAlert("Bien Joué !"); // Affiche "Correct !" d'abord
+
+        // Délai pour afficher l'anecdote après "Correct !"
+        setTimeout(function() {
+            showAlert(question.anecdoteCorrect); // Affiche l'anecdote pour la bonne réponse
+        }, 2000); // 2 secondes d'attente avant de montrer l'anecdote
+
     } else {
-        alert("Mauvaise réponse. La bonne réponse est : " + correctAnswer);
-        alert(question.anecdoteIncorrect); // Afficher l'anecdote pour la mauvaise réponse
+        showAlert("Mauvaise réponse! "); // Affiche la mauvaise réponse
+
+        // Délai pour afficher l'anecdote après la mauvaise réponse
+        setTimeout(function() {
+            showAlert(question.anecdoteIncorrect); // Affiche l'anecdote pour la mauvaise réponse
+        }, 2000); // 2 secondes d'attente avant de montrer l'anecdote
     }
 
-    nextQuestion(index + 1, questions);
+    // Passe à la question suivante après un court délai pour que l'utilisateur puisse lire les messages
+    setTimeout(function() {
+        nextQuestion(index + 1, questions);
+    }, 4000); // Délai de 4 secondes avant de passer à la question suivante pour laisser le temps de lire
 }
- 
+
+// Fonction pour afficher la boîte de dialogue
+function showAlert(message) {
+    const alertBox = document.getElementById("custom-alert");
+    const alertMessage = document.getElementById("alert-message");
+    alertMessage.textContent = message; // Met à jour le message
+    alertBox.classList.remove("hidden"); // Affiche la boîte
+}
+
+// Fonction pour cacher la boîte de dialogue
+document.getElementById("close-alert").addEventListener("click", function () {
+    const alertBox = document.getElementById("custom-alert");
+    alertBox.classList.add("hidden"); // Cache la boîte
+});
