@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('images/ecran.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Style du header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style du titre */
+h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Style du logo */
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.quiz {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(12, 12, 12, 0.2);
+    margin: 0 auto;
+}
+
+/* Style du titre des questions */
+/* Style du titre des questions avec une ombre portée */
+.quiz h2 {
+    font-size: 28px;
+    color: #fff; /* Couleur blanche pour les titres */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ajoute une ombre pour améliorer la lisibilité */
+}
+/* Style des questions à l'intérieur des quiz */
+
+.quiz-question {
+    font-size: 20px; /* Taille du texte pour une bonne lisibilité */
+    color: white; /* Couleur du texte des questions */
+    margin-bottom: 20px;
+    text-align: left; /* Alignement à gauche */
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour rendre la lecture plus facile */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Ombre portée pour plus de profondeur */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide pour l'effet de survol */
+    animation: fadeIn 1s ease-out; /* Animation d'apparition pour un effet visuel */
+}
+
+/* Animation d'apparition de la question */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Déplace la question un peu vers le haut au début */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+.quiz p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+
+/* Style des choix de réponse */
+.choices {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.choice {
+    background-color: #f1f1f1;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet de survol pour les réponses */
+.choice:hover {
+    background-color: #ddd;
+}
+
+/* Style pour la réponse correcte */
+.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Style pour la réponse incorrecte */
+.incorrect {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Style pour les explications */
+.explanation {
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+    display: none; /* Initialement caché */
+}
+
+/* Boutons avec niveaux */
+button {
+    background-color: rgb(38, 107, 70); /* Vert foncé */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Utiliser 100% de la largeur disponible pour le bouton */
+    max-width: 300px; /* Fixer la largeur maximale du bouton (si nécessaire) */
+    border-radius: 8px; /* Bordures arrondies */
+    transition: background-color 0.3s, transform 0.2s; /* Effets de transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Changer la couleur au survol */
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+}
+
+button:active {
+    background-color: #388e3c; /* Couleur encore plus foncée quand on clique */
+    transform: scale(1.05); /* Réduit légèrement la taille lors du clic */
+}
+
+button.level-1 {
+    background-color: #2196F3; /* Bleu */
+}
+
+button.level-2 {
+    background-color: #FF9800; /* Orange */
+}
+
+button.level-3 {
+    background-color: #f44336; /* Rouge */
+}
+
+button.level-1:hover, button.level-2:hover, button.level-3:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 150px; /* Crée de l'espace en bas pour le footer */
+}
