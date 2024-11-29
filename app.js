@@ -384,7 +384,7 @@ function checkAnswer(selected, correctAnswer, index, questions) {
 
         // Délai pour afficher l'anecdote après la mauvaise réponse
         setTimeout(function() {
-            showAlert(question.anecdoteIncorrect, question.imageurl); // Affiche l'anecdote pour la mauvaise réponse
+            showAlert(question.anecdoteIncorrect, question.imageUrl); // Affiche l'anecdote pour la mauvaise réponse
         }, 2000); // 2 secondes d'attente avant de montrer l'anecdote
     }
 
