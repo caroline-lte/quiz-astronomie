@@ -27,7 +27,7 @@ let questionsLevel1 = [
         correctAnswer: "Vénus",
         anecdoteCorrect: "Vénus est la planète la plus chaude de notre système solaire, avec des températures de surface pouvant atteindre 465°C. Cela est dû à son atmosphère dense, principalement composée de dioxyde de carbone, qui crée un effet de serre extrême.",
         anecdoteIncorrect: "La bonne réponse est Vénus. Bien que Mercure soit la planète la plus proche du Soleil, Vénus est la plus chaude en raison de son atmosphère épaisse et de son effet de serre incontrôlé.",
-    imageUrl : "images/venus.jpg",
+    imageUrl: "images/venus.jpg",
     },
     
     {
