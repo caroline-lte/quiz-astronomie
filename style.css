@@ -245,21 +245,20 @@ button:active {
     transform: scale(1.05); /* Réduit légèrement la taille lors du clic */
 }
 
-/* Style spécifique pour le bouton de score */
-#score-section .score-button {
-    background-color: #f06292 !important; /* Rose */
-    color: white !important; /* Texte blanc */
-    padding: 10px 20px !important;
-    font-size: 16px !important;
-    border: none !important;
-    border-radius: 5px !important;
-    cursor: pointer !important;
-    transition: background-color 0.3s !important;
+#returnToMain {
+    background-color: #e91e63; /* Rose */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-button#score-section .score-button {
-    background-color: #f06292 !important; /* Rose */
+#returnToMain:hover {
+    background-color: #d81b60; /* Rose plus foncé pour l'effet hover */
 }
+
 
 
 
