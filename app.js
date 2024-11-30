@@ -258,7 +258,7 @@ let questionsLevel3 = [
         correctAnswer: "Une étoile en rotation rapide",
         anecdoteCorrect: "Un pulsar est une étoile en fin de vie qui tourne sur elle-même à une vitesse extrêmement rapide, émettant des ondes radio régulières.",
         anecdoteIncorrect: "La bonne réponse est une étoile en rotation rapide. Les pulsars sont des étoiles mortes qui tournent très vite et émettent des radiations régulières.",
-        imageUrl:""
+        imageUrl:"8.jpg"
     },
     {
         question: "Quel est l'élément principal de la composition du Soleil ?",
@@ -266,7 +266,7 @@ let questionsLevel3 = [
         correctAnswer: "Hydrogène",
         anecdoteCorrect: "Le Soleil est principalement composé d'hydrogène, qui se fusionne pour produire de l'hélium, libérant ainsi une immense quantité d'énergie.",
         anecdoteIncorrect: "La bonne réponse est l'hydrogène. Il représente environ 75% de la masse du Soleil, tandis que l'hélium en constitue environ 24%.",
-        imageUrl:""
+        imageUrl:"9.jpg"
     }
 ];
 
@@ -278,7 +278,7 @@ let questionsLevel4 = [
         correctAnswer: "13,8 milliards d'années",
         anecdoteCorrect: "L'âge de l'Univers est estimé à 13,8 milliards d'années grâce à des observations précises des étoiles et des galaxies lointaines.",
         anecdoteIncorrect: "La bonne réponse est 13,8 milliards d'années. C'est l'âge estimé de l'Univers, déterminé grâce aux découvertes récentes en cosmologie.",
-        imageUrl: ""
+        imageUrl: "10.jpg"
     },
     {
         question: "Qu'est-ce que le paradoxe de Fermi ?",
@@ -286,7 +286,7 @@ let questionsLevel4 = [
         correctAnswer: "L'absence de signaux extraterrestres",
         anecdoteCorrect: "Le paradoxe de Fermi se demande pourquoi, malgré l'immensité de l'univers, nous n'avons pas encore détecté de signaux d'intelligences extraterrestres.",
         anecdoteIncorrect: "La bonne réponse est l'absence de signaux extraterrestres. Ce paradoxe soulève la question de savoir pourquoi, dans un univers si vaste, nous n'avons trouvé aucune preuve de vie extraterrestre.",
-        imageUrl:""
+        imageUrl:"11.jpg"
     },
     {
         question: "Quelle est la durée de vie restante du Soleil avant qu'il ne devienne une géante rouge et engloutisse les planètes proches, dont la Terre ?",
@@ -294,7 +294,7 @@ let questionsLevel4 = [
         correctAnswer: "5 milliards d'années",
         anecdoteCorrect: "Le Soleil, actuellement au milieu de sa phase stable, a encore environ 5 milliards d'années avant de devenir une géante rouge et de modifier radicalement le système solaire, avec des conséquences potentiellement catastrophiques pour la Terre.",
         anecdoteIncorrect: "La bonne réponse est 5 milliards d'années. Dans un futur lointain, le Soleil se dilatera, et pourrait engloutir Mercure, Vénus, et la Terre avant de se transformer en une naine blanche.",
-        imageUrl:""
+        imageUrl:"12.jgp"
     },
     
     {
@@ -303,7 +303,7 @@ let questionsLevel4 = [
         correctAnswer: "La galaxie d'Andromède",
         anecdoteCorrect: "La galaxie d'Andromède est la grande voisine de la Voie Lactée. Elle se rapproche de notre galaxie et devrait entrer en collision avec elle dans environ 4 milliards d'années.",
         anecdoteIncorrect: "La bonne réponse est la galaxie d'Andromède. C'est la galaxie spirale la plus proche de la Voie Lactée, à environ 2,5 millions d'années-lumière de nous.",
-        imageUrl: ""
+        imageUrl: "13.jpg"
     },
     {
         question: "Quelle est la distance entre la Terre et le Soleil ?",
@@ -311,7 +311,7 @@ let questionsLevel4 = [
         correctAnswer: "150 millions de kilomètres",
         anecdoteCorrect: "La distance moyenne entre la Terre et le Soleil est d'environ 150 millions de kilomètres, une mesure appelée unité astronomique (UA).",
         anecdoteIncorrect: "La bonne réponse est 150 millions de kilomètres. Cette distance est la moyenne entre la Terre et le Soleil, soit 1 unité astronomique.",
-        imageUrl: ""
+        imageUrl: "14.jpg"
     },
     {
         question: "Quel est le nom de l'effet qui cause la courbure de l'espace-temps autour des objets massifs ?",
@@ -319,7 +319,7 @@ let questionsLevel4 = [
         correctAnswer: "La relativité générale",
         anecdoteCorrect: "La relativité générale, formulée par Albert Einstein en 1915, explique que la gravité résulte de la courbure de l'espace-temps autour des objets massifs, comme les planètes et les étoiles.",
         anecdoteIncorrect: "La bonne réponse est la relativité générale. Cette théorie a changé notre compréhension de la gravité et a été confirmée par des observations comme la déviation de la lumière des étoiles par le Soleil.",
-        imageUrl: ""
+        imageUrl: "15.jpg"
     },
     {
         question: "Quel est le rôle des trous noirs supermassifs au centre des galaxies ?",
