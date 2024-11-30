@@ -470,7 +470,7 @@ function nextQuestion(index, questions, score) {
                 <span class="grade-score">${finalGrade} / 10</span>
             </div>
             <div class="result-logo">
-                <img src="images/astronaut_suit_space_moonwalk-256.webp" alt="Logo" />
+                <img src="images/logo.webp" alt="Logo" />
             </div>
             <button id="returnToMain">Retour à l'écran principal</button>
         </div>`;
