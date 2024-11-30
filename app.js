@@ -166,7 +166,7 @@ let questionsLevel2 = [
         correctAnswer: "Apollo 11",
         anecdoteCorrect: "Apollo 11 a été la première mission à poser des astronautes sur la Lune en 1969. Neil Armstrong et Buzz Aldrin ont fait l'histoire en devenant les premiers humains à marcher sur la surface lunaire.",
         anecdoteIncorrect: "La bonne réponse est Apollo 11. Cette mission a permis à Neil Armstrong et Buzz Aldrin de faire un pas géant pour l'humanité en 1969.",
-        imageUrl: "image/appolo.jpg"
+        imageUrl: "images/appolo.jpg"
     },
     
     {
@@ -175,7 +175,7 @@ let questionsLevel2 = [
         correctAnswer: "Azote",
         anecdoteCorrect: "L'azote compose environ 78% de l'atmosphère terrestre, ce qui en fait le principal gaz. L'oxygène ne représente que 21%.",
         anecdoteIncorrect: "La bonne réponse est l'azote. L'atmosphère terrestre est composée à 78% d'azote, et l'oxygène représente seulement 21%.",
-        imageUrl: "image/azote.jpg"
+        imageUrl: "images/azote.jpg"
     },
 
 ];
@@ -188,7 +188,7 @@ let questionsLevel3 = [
         correctAnswer: "Entre 100 milliards et 200 milliards",
         anecdoteCorrect: "Les scientifiques estiment qu'il pourrait y avoir entre 100 et 200 milliards de planètes semblables à la Terre rien que dans notre galaxie, la Voie lactée, ce qui ouvre la possibilité de découvrir de la vie ailleurs.",
         anecdoteIncorrect: "La bonne réponse est que la Voie lactée pourrait abriter entre 100 et 200 milliards de planètes similaires à la Terre, selon des recherches récentes sur les exoplanètes. Cela montre à quel point l'univers est vaste et potentiellement habité.",
-        imageUrl:"OIP.jpg"
+        imageUrl:"images/OIP.jpg"
     },
     
     
@@ -198,7 +198,7 @@ let questionsLevel3 = [
         correctAnswer: "Clipper",
         anecdoteCorrect: "La mission Clipper de la NASA, lancée en 2024, est dédiée à l'étude de la lune Europe de Jupiter, où un océan sous la glace pourrait abriter des formes de vie.",
         anecdoteIncorrect: "La bonne réponse est Clipper. Cette mission aura pour but de cartographier la surface d'Europe et de sonder l'océan caché sous sa croûte glacée à la recherche de conditions propices à la vie.",
-        imageUrl: "1.jpg"
+        imageUrl: "images/1.jpg"
     },
     
     {
@@ -207,7 +207,7 @@ let questionsLevel3 = [
         correctAnswer: "Ganymede",
         anecdoteCorrect: "Ganymede, la plus grande lune de Jupiter, est également la plus grande lune du système solaire. Elle est plus grande que la planète Mercure.",
         anecdoteIncorrect: "La bonne réponse est Ganymede. C'est la plus grande lune de Jupiter, et elle possède un noyau métallique comme celui de la Terre.",
-        imageUrl: "2.jpg"
+        imageUrl: "images/2.jpg"
     },
     {
         question: "Quelle est la vitesse de la lumière dans le vide ?",
@@ -215,7 +215,7 @@ let questionsLevel3 = [
         correctAnswer: "300 000 km/s",
         anecdoteCorrect: "La vitesse de la lumière dans le vide est de 300 000 km/s, ce qui permet à la lumière de voyager de la Terre au Soleil en environ 8 minutes.",
         anecdoteIncorrect: "La bonne réponse est 300 000 km/s. La lumière voyage incroyablement vite, et c'est la vitesse maximale connue dans l'univers.",
-        imageUrl: "3.jpg"
+        imageUrl: "images/3.jpg"
     },
     {
         question: "Sur quelle planète se trouve le plus grand canyon connu ?",
@@ -223,7 +223,7 @@ let questionsLevel3 = [
         correctAnswer: "Mars",
         anecdoteCorrect: "Le plus grand canyon du système solaire, le Valles Marineris, se trouve sur Mars. Il mesure plus de 4 000 km de long.",
         anecdoteIncorrect: "La bonne réponse est Mars. Le Valles Marineris est un canyon gigantesque qui pourrait en fait contenir tout le Grand Canyon de la Terre.",
-        imageUrl:"4.jpg"
+        imageUrl:"images/4.jpg"
     },
     {
         question: "Quel est le nom de la planète qui tourne dans le sens inverse de toutes les autres planètes du système solaire ?",
@@ -231,7 +231,7 @@ let questionsLevel3 = [
         correctAnswer: "Vénus",
         anecdoteCorrect: "Vénus est la seule planète du système solaire à tourner dans le sens inverse de toutes les autres planètes. Cela signifie que si vous vous trouviez sur Vénus, le Soleil se lèverait à l'ouest et se coucherait à l'est.",
         anecdoteIncorrect: "La bonne réponse est Vénus. Cette planète a une rotation rétrograde, ce qui fait qu'elle tourne dans le sens opposé des autres planètes. Ce phénomène est encore un mystère pour les scientifiques.",
-        imageUrl:"5.jpg"
+        imageUrl:"images/5.jpg"
     },
     {
         question: "Quel est le nom de la sonde qui a été la première à quitter le système solaire ?",
@@ -239,7 +239,7 @@ let questionsLevel3 = [
         correctAnswer: "Voyager 1",
         anecdoteCorrect: "La sonde Voyager 1 a été lancée en 1977 et a quitté notre système solaire en 2012, envoyant des données depuis l'espace interstellaire.",
         anecdoteIncorrect: "La bonne réponse est Voyager 1. Elle a quitté notre système solaire en 2012 et a fourni des informations précieuses sur les frontières de notre système.",
-        imageUrl:"6.jpeg"
+        imageUrl:"images/6.jpeg"
     },
     {
         question: "Pourquoi une journée sur Vénus est-elle plus longue qu'une année sur Vénus ?",
@@ -250,7 +250,7 @@ let questionsLevel3 = [
         correctAnswer: "Parce que Vénus tourne très lentement sur elle-même",
         anecdoteCorrect: "Vénus met environ 243 jours terrestres pour effectuer une rotation sur elle-même, tandis qu'elle ne met que 225 jours terrestres pour orbiter autour du Soleil.",
         anecdoteIncorrect: "La bonne réponse est que Vénus tourne très lentement sur elle-même, ce qui fait que sa journée est plus longue que son année. Sa rotation est extrêmement lente, quasiment rétrograde par rapport à la direction de son orbite.",
-        imageUrl:"7.webp"
+        imageUrl:"images/7.webp"
     },
     {
         question: "Qu'est-ce qu'un pulsar ?",
@@ -258,7 +258,7 @@ let questionsLevel3 = [
         correctAnswer: "Une étoile en rotation rapide",
         anecdoteCorrect: "Un pulsar est une étoile en fin de vie qui tourne sur elle-même à une vitesse extrêmement rapide, émettant des ondes radio régulières.",
         anecdoteIncorrect: "La bonne réponse est une étoile en rotation rapide. Les pulsars sont des étoiles mortes qui tournent très vite et émettent des radiations régulières.",
-        imageUrl:"8.jpg"
+        imageUrl:"images/8.jpg"
     },
     {
         question: "Quel est l'élément principal de la composition du Soleil ?",
@@ -266,7 +266,7 @@ let questionsLevel3 = [
         correctAnswer: "Hydrogène",
         anecdoteCorrect: "Le Soleil est principalement composé d'hydrogène, qui se fusionne pour produire de l'hélium, libérant ainsi une immense quantité d'énergie.",
         anecdoteIncorrect: "La bonne réponse est l'hydrogène. Il représente environ 75% de la masse du Soleil, tandis que l'hélium en constitue environ 24%.",
-        imageUrl:"9.jpg"
+        imageUrl:"images/9.jpg"
     }
 ];
 
@@ -278,7 +278,7 @@ let questionsLevel4 = [
         correctAnswer: "13,8 milliards d'années",
         anecdoteCorrect: "L'âge de l'Univers est estimé à 13,8 milliards d'années grâce à des observations précises des étoiles et des galaxies lointaines.",
         anecdoteIncorrect: "La bonne réponse est 13,8 milliards d'années. C'est l'âge estimé de l'Univers, déterminé grâce aux découvertes récentes en cosmologie.",
-        imageUrl: "10.jpg"
+        imageUrl: "images/10.jpg"
     },
     {
         question: "Qu'est-ce que le paradoxe de Fermi ?",
@@ -286,7 +286,7 @@ let questionsLevel4 = [
         correctAnswer: "L'absence de signaux extraterrestres",
         anecdoteCorrect: "Le paradoxe de Fermi se demande pourquoi, malgré l'immensité de l'univers, nous n'avons pas encore détecté de signaux d'intelligences extraterrestres.",
         anecdoteIncorrect: "La bonne réponse est l'absence de signaux extraterrestres. Ce paradoxe soulève la question de savoir pourquoi, dans un univers si vaste, nous n'avons trouvé aucune preuve de vie extraterrestre.",
-        imageUrl:"11.jpg"
+        imageUrl:"images/11.jpg"
     },
     {
         question: "Quelle est la durée de vie restante du Soleil avant qu'il ne devienne une géante rouge et engloutisse les planètes proches, dont la Terre ?",
@@ -294,7 +294,7 @@ let questionsLevel4 = [
         correctAnswer: "5 milliards d'années",
         anecdoteCorrect: "Le Soleil, actuellement au milieu de sa phase stable, a encore environ 5 milliards d'années avant de devenir une géante rouge et de modifier radicalement le système solaire, avec des conséquences potentiellement catastrophiques pour la Terre.",
         anecdoteIncorrect: "La bonne réponse est 5 milliards d'années. Dans un futur lointain, le Soleil se dilatera, et pourrait engloutir Mercure, Vénus, et la Terre avant de se transformer en une naine blanche.",
-        imageUrl:"12.jgp"
+        imageUrl:"images/12.jpg"
     },
     
     {
@@ -303,7 +303,7 @@ let questionsLevel4 = [
         correctAnswer: "La galaxie d'Andromède",
         anecdoteCorrect: "La galaxie d'Andromède est la grande voisine de la Voie Lactée. Elle se rapproche de notre galaxie et devrait entrer en collision avec elle dans environ 4 milliards d'années.",
         anecdoteIncorrect: "La bonne réponse est la galaxie d'Andromède. C'est la galaxie spirale la plus proche de la Voie Lactée, à environ 2,5 millions d'années-lumière de nous.",
-        imageUrl: "13.jpg"
+        imageUrl: "images/13.jpg"
     },
     {
         question: "Quelle est la distance entre la Terre et le Soleil ?",
@@ -311,7 +311,7 @@ let questionsLevel4 = [
         correctAnswer: "150 millions de kilomètres",
         anecdoteCorrect: "La distance moyenne entre la Terre et le Soleil est d'environ 150 millions de kilomètres, une mesure appelée unité astronomique (UA).",
         anecdoteIncorrect: "La bonne réponse est 150 millions de kilomètres. Cette distance est la moyenne entre la Terre et le Soleil, soit 1 unité astronomique.",
-        imageUrl: "14.jpg"
+        imageUrl: "images/14.jpg"
     },
     {
         question: "Quel est le nom de l'effet qui cause la courbure de l'espace-temps autour des objets massifs ?",
@@ -319,7 +319,7 @@ let questionsLevel4 = [
         correctAnswer: "La relativité générale",
         anecdoteCorrect: "La relativité générale, formulée par Albert Einstein en 1915, explique que la gravité résulte de la courbure de l'espace-temps autour des objets massifs, comme les planètes et les étoiles.",
         anecdoteIncorrect: "La bonne réponse est la relativité générale. Cette théorie a changé notre compréhension de la gravité et a été confirmée par des observations comme la déviation de la lumière des étoiles par le Soleil.",
-        imageUrl: "15.jpg"
+        imageUrl: "images/15.jpg"
     },
     {
         question: "Quel est le rôle des trous noirs supermassifs au centre des galaxies ?",
@@ -327,7 +327,7 @@ let questionsLevel4 = [
         correctAnswer: "Ils stabilisent la galaxie",
         anecdoteCorrect: "Les trous noirs supermassifs jouent un rôle crucial en stabilisant les galaxies en maintenant leur centre sous contrôle gravitationnel.",
         anecdoteIncorrect: "La bonne réponse est qu'ils stabilisent la galaxie. Ces trous noirs supermassifs au centre des galaxies exercent une influence gravitationnelle immense qui aide à maintenir la structure de la galaxie.",
-        imageUrl: "16.jpg"
+        imageUrl: "images/16.jpg"
     },
     {
         question: "Quelle est la principale source d'énergie d'une étoile ?",
@@ -335,7 +335,7 @@ let questionsLevel4 = [
         correctAnswer: "La fusion nucléaire",
         anecdoteCorrect: "Les étoiles produisent de l'énergie par fusion nucléaire, un processus où des noyaux légers se combinent pour former des noyaux plus lourds, libérant ainsi une énorme quantité d'énergie.",
         anecdoteIncorrect: "La bonne réponse est la fusion nucléaire. C'est ainsi que les étoiles produisent leur énergie, en fusionnant des noyaux d'hydrogène pour créer de l'hélium et libérer de l'énergie.",
-        imageUrl: "17.jpg"
+        imageUrl: "images/17.jpg"
     },
     {
         question: "Quel est l'élément qui déclenche la fusion nucléaire dans les étoiles ?",
@@ -343,7 +343,7 @@ let questionsLevel4 = [
         correctAnswer: "Hydrogène",
         anecdoteCorrect: "Dans les étoiles, la fusion nucléaire commence par la fusion des noyaux d'hydrogène pour former de l'hélium, libérant de l'énergie.",
         anecdoteIncorrect: "La bonne réponse est l'hydrogène. C'est cet élément qui, lorsqu'il se fusionne, produit de l'hélium et génère une immense quantité d'énergie, alimentant ainsi les étoiles.",
-        imageUrl:"18.jpg"
+        imageUrl:"images/18.jpg"
     }
 ];
 
@@ -354,7 +354,7 @@ let questionsLevel5 = [
         correctAnswer: "Kepler-452b",
         anecdoteCorrect: "Kepler-452b, surnommée la 'cousine de la Terre', est une exoplanète située à environ 1 400 années-lumière de la Terre. Elle a des conditions similaires à celles de la Terre, notamment une taille et une température compatibles avec la vie.",
         anecdoteIncorrect: "La bonne réponse est Kepler-452b, découverte par le télescope spatial Kepler. Elle est souvent comparée à la Terre en raison de sa position dans la zone habitable de son étoile.",
-        imageUrl: "20.jpg"
+        imageUrl: "images/20.jpg"
     },
     {
         question: "Quel est le nom du phénomène où la lumière provenant d'un objet lointain est déviée par la gravité d'un objet massif, amplifiant ainsi l'image de l'objet derrière lui ?",
@@ -362,7 +362,7 @@ let questionsLevel5 = [
         correctAnswer: "Lentille gravitationnelle",
         anecdoteCorrect: "La lentille gravitationnelle est un phénomène prédit par la relativité générale, où un objet massif, comme un trou noir, dévie la lumière d'un objet plus lointain, permettant aux astronomes d'observer des objets distants ou de découvrir des galaxies inaccessibles.",
         anecdoteIncorrect: "La bonne réponse est lentille gravitationnelle. Ce phénomène a été observé pour la première fois dans les années 1970 et est un outil essentiel pour l'étude de l'univers lointain.",
-        imageUrl: "21.jpg"
+        imageUrl: "images/21.jpg"
     },
     {
         question: "Quel est le nom de la plus grande lune de Saturne ?",
@@ -370,7 +370,7 @@ let questionsLevel5 = [
         correctAnswer: "Titan",
         anecdoteCorrect: "Titan, la plus grande lune de Saturne, est plus grande que la planète Mercure. Elle possède une atmosphère dense composée principalement d'azote, et des lacs de méthane liquide à sa surface.",
         anecdoteIncorrect: "La bonne réponse est Titan. Cette lune est unique avec ses mers de méthane liquide et ses conditions météorologiques complexes.",
-        imageUrl: "22.jpg"
+        imageUrl: "images/22.jpg"
     },
     {
         question: "Quel phénomène cosmique produit une explosion d'une étoile en fin de vie, libérant une quantité d'énergie colossale ?",
@@ -378,7 +378,7 @@ let questionsLevel5 = [
         correctAnswer: "Une supernova",
         anecdoteCorrect: "Une supernova est l'explosion d'une étoile massive en fin de vie. Ces événements génèrent une lumière si intense qu'ils peuvent briller plus que toute une galaxie pendant un court laps de temps.",
         anecdoteIncorrect: "La bonne réponse est une supernova. Ces explosions jouent un rôle clé dans la dispersion des éléments lourds à travers l'univers, participant ainsi à la formation de nouvelles étoiles et planètes.",
-        imageUrl: "23.jpg"
+        imageUrl: "images/23.jpg"
     },
     {
         question: "Quel est le nom de l'énorme système de galaxies situé à plus de 300 millions d'années-lumière de la Terre, considéré comme le plus grand objet de l'univers observable ?",
@@ -386,7 +386,7 @@ let questionsLevel5 = [
         correctAnswer: "L'amas de Laniakea",
         anecdoteCorrect: "L'amas de Laniakea est un super-amas de galaxies qui comprend notre propre Voie lactée. Il s'étend sur plus de 520 millions d'années-lumière et abrite environ 100 000 galaxies.",
         anecdoteIncorrect: "La bonne réponse est l'amas de Laniakea. Il a été identifié en 2014 et représente une portion gigantesque de l'univers observable.",
-        imageUrl:"24.jpg"
+        imageUrl:"images/24.jpg"
     },
     {
         question: "Combien de planètes naines ont été officiellement reconnues dans notre système solaire ?",
@@ -394,7 +394,7 @@ let questionsLevel5 = [
         correctAnswer: "5",
         anecdoteCorrect: "Il y a actuellement 5 planètes naines officiellement reconnues : Pluton, Eris, Hauméa, Makemake, et Cérès. Pluton, autrefois considérée comme la neuvième planète, a été reclassée en 2006.",
         anecdoteIncorrect: "La bonne réponse est 5. Les planètes naines sont des corps célestes qui sont trop petits pour être des planètes classiques mais assez grands pour leur propre gravité.",
-        imageUrl:"25.jpg"
+        imageUrl:"images/25.jpg"
     },
     {
         question: "Qu'est-ce qu'un quasar ?",
@@ -402,7 +402,7 @@ let questionsLevel5 = [
         correctAnswer: "Un trou noir supermassif en activité",
         anecdoteCorrect: "Un quasar est un noyau galactique extrêmement lumineux, alimenté par un trou noir supermassif en activité. Les quasars émettent des quantités colossales d'énergie, souvent plus que toute une galaxie.",
         anecdoteIncorrect: "La bonne réponse est un trou noir supermassif en activité. Ils sont parmi les objets les plus puissants de l'univers, visible à des milliards d'années-lumière.",
-        imageUrl:"26.jpg"
+        imageUrl:"images/26.jpg"
     },
     {
         question: "Dans quel phénomène astronomique les objets proches d'un trou noir peuvent-ils être déformés par l'intensité de la gravité ?",
@@ -410,7 +410,7 @@ let questionsLevel5 = [
         correctAnswer: "L'étirement spaghettifié",
         anecdoteCorrect: "L'étirement spaghettifié est un phénomène où un objet se fait étirer de manière extrême en raison de la différence de force gravitationnelle entre sa partie proche et éloignée d'un trou noir.",
         anecdoteIncorrect: "La bonne réponse est l'étirement spaghettifié. Cet effet montre la puissance des forces gravitationnelles extrêmes à proximité des trous noirs.",
-        imageUrl:"27.jpg"
+        imageUrl:"images/27.jpg"
     },
     {
         question: "Quel est le nom de la première exoplanète découverte autour d'une étoile semblable au Soleil ?",
@@ -418,7 +418,7 @@ let questionsLevel5 = [
         correctAnswer: "51 Pegasi b",
         anecdoteCorrect: "51 Pegasi b, surnommée 'Bellerophon', a été la première exoplanète découverte autour d'une étoile de type solaire en 1995. Cette découverte a marqué un tournant majeur dans la recherche exoplanétaire.",
         anecdoteIncorrect: "La bonne réponse est 51 Pegasi b. Il s'agit de la première exoplanète détectée autour d'une étoile semblable au Soleil, une découverte qui a ouvert la voie à la recherche d'exoplanètes habitables.",
-        imageUrl: "28.jpg"
+        imageUrl: "2images/28.jpg"
     },
     {
         question: "Quel est le nom du rayonnement émis par le fond diffus cosmologique, qui est l'une des premières traces de l'univers après le Big Bang ?",
@@ -426,7 +426,7 @@ let questionsLevel5 = [
         correctAnswer: "Rayonnement de fond cosmologique",
         anecdoteCorrect: "Le rayonnement de fond cosmologique est une radiation électromagnétique uniformément répartie dans l'univers, témoin de l'état de l'univers lorsque celui-ci n'était encore qu'une soupe chaude et dense, juste après le Big Bang.",
         anecdoteIncorrect: "La bonne réponse est le rayonnement de fond cosmologique. Il représente les premières empreintes laissées par l'univers après le Big Bang et est utilisé pour étudier l'évolution de l'univers.",
-        imageUrl: "29.jpg"
+        imageUrl: "images/29.jpg"
     }
 ];
 
