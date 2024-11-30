@@ -176,11 +176,11 @@ let questionsLevel2 = [
         anecdoteCorrect: "L'azote compose environ 78% de l'atmosphère terrestre, ce qui en fait le principal gaz. L'oxygène ne représente que 21%.",
         anecdoteIncorrect: "La bonne réponse est l'azote. L'atmosphère terrestre est composée à 78% d'azote, et l'oxygène représente seulement 21%.",
         imageUrl: "images/azote.jpg"
-    },
+    }
 
 ];
 
-// Questions pour le niveau 2 (Moyen)
+// Questions pour le niveau 3 (Moyen)
 let questionsLevel3 = [
     {
         question: "Si l'univers observable mesure environ 93 milliards d'années-lumière de diamètre, combien de planètes similaires à la Terre pourrait-il y avoir dans notre galaxie de la Voie lactée ?",
@@ -456,11 +456,25 @@ function startQuizLevel5() {
     nextQuestion(0, questionsLevel5);
 }
 
-function nextQuestion(index, questions) {
+function nextQuestion(index, questions, score) {
     if (index >= questions.length) {
+        const finalGrade = (score / questions.length) * 10;
+     
+
+
         document.querySelector('main').innerHTML = 
-            `<h2>Quiz terminé !</h2>
-            <button id="returnToMain">Retour à l'écran principal</button>`;
+        `<div class="quiz-result">
+            <h2>Quiz terminé !</h2>
+            <div class="final-grade">
+                <span class="grade-label">Votre note finale :</span>
+                <span class="grade-score">${finalGrade} / 10</span>
+            </div>
+            <div class="result-logo">
+                <img src="images/astronaut_suit_space_moonwalk-256.webp" alt="Logo" />
+            </div>
+            <button id="returnToMain">Retour à l'écran principal</button>
+        </div>`;
+    
         
         document.getElementById('returnToMain').addEventListener('click', function() {
             location.reload();
@@ -474,7 +488,7 @@ function nextQuestion(index, questions) {
         <h2 class="quiz-question">${question.question}</h2>
         <div class="choices">
             ${question.choices.map(choice => 
-                `<button class="answer-button" data-answer="${choice}">${choice}</button>`
+                `<button class="answer-button" data-answer="${choice}">${choice}</button>`  
             ).join('<br>')}
         </div>
     `;
@@ -486,14 +500,16 @@ function nextQuestion(index, questions) {
         button.addEventListener('click', (e) => {
             console.log(`Bouton cliqué : ${e.target.getAttribute('data-answer')}`);
             const selectedAnswer = e.target.getAttribute('data-answer');
-            checkAnswer(selectedAnswer, question.correctAnswer, index, questions);
+            score = checkAnswer(selectedAnswer, question.correctAnswer, index, questions, score);  // Met à jour le score
+            nextQuestion(index + 1, questions, score);  // Passe à la question suivante
         });
     });
 }
 
 
+
 // Fonction pour vérifier la réponse et passer à la question suivante
-function checkAnswer(selected, correctAnswer, index, questions) {
+function checkAnswer(selected, correctAnswer, index, questions, score) {
     const question = questions[index];
     
     // Vérifie si la réponse est correcte
@@ -505,6 +521,8 @@ function checkAnswer(selected, correctAnswer, index, questions) {
             showAlert(question.anecdoteCorrect, question.imageUrl); // Affiche l'anecdote pour la bonne réponse
         }, 2000); // 2 secondes d'attente avant de montrer l'anecdote
 
+        score++;  // Incrémenter le score pour une bonne réponse
+
     } else {
         showAlert("Mauvaise réponse! ", question.imageUrl); // Affiche la mauvaise réponse
 
@@ -514,11 +532,9 @@ function checkAnswer(selected, correctAnswer, index, questions) {
         }, 2000); // 2 secondes d'attente avant de montrer l'anecdote
     }
 
-    // Passe à la question suivante après un court délai pour que l'utilisateur puisse lire les messages
-    setTimeout(function() {
-        nextQuestion(index + 1, questions);
-    }, 4000); // Délai de 4 secondes avant de passer à la question suivante pour laisser le temps de lire
+    return score;  // Retourne le score mis à jour
 }
+
 
 // Fonction pour afficher la boîte de dialogue
 function showAlert(message, imageUrl = null) {
@@ -543,3 +559,32 @@ function showAlert(message, imageUrl = null) {
 }
 
 
+function startQuizLevel1() {
+    document.querySelector('main').innerHTML = ''; 
+    let score = 0;  // Initialisation du score
+    nextQuestion(0, questionsLevel1, score);
+}
+
+function startQuizLevel2() {
+    document.querySelector('main').innerHTML = ''; 
+    let score = 0;
+    nextQuestion(0, questionsLevel2, score);
+}
+
+function startQuizLevel3() {
+    document.querySelector('main').innerHTML = '';
+    let score = 0;
+    nextQuestion(0, questionsLevel3, score);
+}
+
+function startQuizLevel4() {
+    document.querySelector('main').innerHTML = '';
+    let score = 0;
+    nextQuestion(0, questionsLevel4, score);
+}
+
+function startQuizLevel5() {
+    document.querySelector('main').innerHTML = '';
+    let score = 0;
+    nextQuestion(0, questionsLevel5, score);
+}

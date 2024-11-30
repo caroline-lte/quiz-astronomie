@@ -261,3 +261,78 @@ main {
     margin-top: 50px;
     padding-bottom: 150px; /* Crée de l'espace en bas pour le footer */
 }
+.quiz-result img {
+    width: 100px; /* Ajuste la largeur de l'image du logo */
+    height: auto; /* Laisse la hauteur ajustée automatiquement pour garder les proportions */
+}
+
+.quiz-result {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Noir transparent (70% opaque) */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(241, 232, 232, 0.1);
+    margin-top: 30px;
+}
+
+h2 {
+    margin-bottom: 20px; /* Espacement sous le titre "Quiz terminé !" */
+}
+.quiz-result h2 {
+    color: #f1f1f1; /* Remplace cette couleur par celle que tu préfères */
+    font-size: 32px; /* Si tu veux aussi ajuster la taille de la police */
+    margin-bottom: 20px; /* Ajuste l'espacement sous le titre */
+}
+
+
+
+.final-grade {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #faf5f5;
+}
+
+.grade-label {
+    display: block;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.grade-score {
+    font-size: 36px;
+    color: white; /* Vous pouvez changer la couleur pour correspondre à votre thème */
+    font-weight: 700;
+    margin-top: 5px;
+    margin-top: 10px; 
+    animation: slideIn 1s ease-in-out;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #e91e63; /* Couleur de fond pour le bouton */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Animation pour l'apparition de la note finale */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
