@@ -327,7 +327,7 @@ let questionsLevel4 = [
         correctAnswer: "Ils stabilisent la galaxie",
         anecdoteCorrect: "Les trous noirs supermassifs jouent un rôle crucial en stabilisant les galaxies en maintenant leur centre sous contrôle gravitationnel.",
         anecdoteIncorrect: "La bonne réponse est qu'ils stabilisent la galaxie. Ces trous noirs supermassifs au centre des galaxies exercent une influence gravitationnelle immense qui aide à maintenir la structure de la galaxie.",
-        imageUrl: ""
+        imageUrl: "16.jpg"
     },
     {
         question: "Quelle est la principale source d'énergie d'une étoile ?",
@@ -335,7 +335,7 @@ let questionsLevel4 = [
         correctAnswer: "La fusion nucléaire",
         anecdoteCorrect: "Les étoiles produisent de l'énergie par fusion nucléaire, un processus où des noyaux légers se combinent pour former des noyaux plus lourds, libérant ainsi une énorme quantité d'énergie.",
         anecdoteIncorrect: "La bonne réponse est la fusion nucléaire. C'est ainsi que les étoiles produisent leur énergie, en fusionnant des noyaux d'hydrogène pour créer de l'hélium et libérer de l'énergie.",
-        imageUrl: ""
+        imageUrl: "17.jpg"
     },
     {
         question: "Quel est l'élément qui déclenche la fusion nucléaire dans les étoiles ?",
@@ -343,7 +343,7 @@ let questionsLevel4 = [
         correctAnswer: "Hydrogène",
         anecdoteCorrect: "Dans les étoiles, la fusion nucléaire commence par la fusion des noyaux d'hydrogène pour former de l'hélium, libérant de l'énergie.",
         anecdoteIncorrect: "La bonne réponse est l'hydrogène. C'est cet élément qui, lorsqu'il se fusionne, produit de l'hélium et génère une immense quantité d'énergie, alimentant ainsi les étoiles.",
-        imageUrl:""
+        imageUrl:"18.jpg"
     }
 ];
 
@@ -354,7 +354,7 @@ let questionsLevel5 = [
         correctAnswer: "Kepler-452b",
         anecdoteCorrect: "Kepler-452b, surnommée la 'cousine de la Terre', est une exoplanète située à environ 1 400 années-lumière de la Terre. Elle a des conditions similaires à celles de la Terre, notamment une taille et une température compatibles avec la vie.",
         anecdoteIncorrect: "La bonne réponse est Kepler-452b, découverte par le télescope spatial Kepler. Elle est souvent comparée à la Terre en raison de sa position dans la zone habitable de son étoile.",
-        imageUrl: ""
+        imageUrl: "20.jpg"
     },
     {
         question: "Quel est le nom du phénomène où la lumière provenant d'un objet lointain est déviée par la gravité d'un objet massif, amplifiant ainsi l'image de l'objet derrière lui ?",
@@ -362,7 +362,7 @@ let questionsLevel5 = [
         correctAnswer: "Lentille gravitationnelle",
         anecdoteCorrect: "La lentille gravitationnelle est un phénomène prédit par la relativité générale, où un objet massif, comme un trou noir, dévie la lumière d'un objet plus lointain, permettant aux astronomes d'observer des objets distants ou de découvrir des galaxies inaccessibles.",
         anecdoteIncorrect: "La bonne réponse est lentille gravitationnelle. Ce phénomène a été observé pour la première fois dans les années 1970 et est un outil essentiel pour l'étude de l'univers lointain.",
-        imageUrl: ""
+        imageUrl: "21.jpg"
     },
     {
         question: "Quel est le nom de la plus grande lune de Saturne ?",
@@ -370,7 +370,7 @@ let questionsLevel5 = [
         correctAnswer: "Titan",
         anecdoteCorrect: "Titan, la plus grande lune de Saturne, est plus grande que la planète Mercure. Elle possède une atmosphère dense composée principalement d'azote, et des lacs de méthane liquide à sa surface.",
         anecdoteIncorrect: "La bonne réponse est Titan. Cette lune est unique avec ses mers de méthane liquide et ses conditions météorologiques complexes.",
-        imageUrl: ""
+        imageUrl: "22.jpg"
     },
     {
         question: "Quel phénomène cosmique produit une explosion d'une étoile en fin de vie, libérant une quantité d'énergie colossale ?",
@@ -378,7 +378,7 @@ let questionsLevel5 = [
         correctAnswer: "Une supernova",
         anecdoteCorrect: "Une supernova est l'explosion d'une étoile massive en fin de vie. Ces événements génèrent une lumière si intense qu'ils peuvent briller plus que toute une galaxie pendant un court laps de temps.",
         anecdoteIncorrect: "La bonne réponse est une supernova. Ces explosions jouent un rôle clé dans la dispersion des éléments lourds à travers l'univers, participant ainsi à la formation de nouvelles étoiles et planètes.",
-        imageUrl: ""
+        imageUrl: "23.jpg"
     },
     {
         question: "Quel est le nom de l'énorme système de galaxies situé à plus de 300 millions d'années-lumière de la Terre, considéré comme le plus grand objet de l'univers observable ?",
@@ -386,7 +386,7 @@ let questionsLevel5 = [
         correctAnswer: "L'amas de Laniakea",
         anecdoteCorrect: "L'amas de Laniakea est un super-amas de galaxies qui comprend notre propre Voie lactée. Il s'étend sur plus de 520 millions d'années-lumière et abrite environ 100 000 galaxies.",
         anecdoteIncorrect: "La bonne réponse est l'amas de Laniakea. Il a été identifié en 2014 et représente une portion gigantesque de l'univers observable.",
-        imageUrl:""
+        imageUrl:"24.jpg"
     },
     {
         question: "Combien de planètes naines ont été officiellement reconnues dans notre système solaire ?",
@@ -394,7 +394,7 @@ let questionsLevel5 = [
         correctAnswer: "5",
         anecdoteCorrect: "Il y a actuellement 5 planètes naines officiellement reconnues : Pluton, Eris, Hauméa, Makemake, et Cérès. Pluton, autrefois considérée comme la neuvième planète, a été reclassée en 2006.",
         anecdoteIncorrect: "La bonne réponse est 5. Les planètes naines sont des corps célestes qui sont trop petits pour être des planètes classiques mais assez grands pour leur propre gravité.",
-        imageUrl:""
+        imageUrl:"25.jpg"
     },
     {
         question: "Qu'est-ce qu'un quasar ?",
@@ -402,7 +402,7 @@ let questionsLevel5 = [
         correctAnswer: "Un trou noir supermassif en activité",
         anecdoteCorrect: "Un quasar est un noyau galactique extrêmement lumineux, alimenté par un trou noir supermassif en activité. Les quasars émettent des quantités colossales d'énergie, souvent plus que toute une galaxie.",
         anecdoteIncorrect: "La bonne réponse est un trou noir supermassif en activité. Ils sont parmi les objets les plus puissants de l'univers, visible à des milliards d'années-lumière.",
-        imageUrl:""
+        imageUrl:"26.jpg"
     },
     {
         question: "Dans quel phénomène astronomique les objets proches d'un trou noir peuvent-ils être déformés par l'intensité de la gravité ?",
@@ -410,23 +410,23 @@ let questionsLevel5 = [
         correctAnswer: "L'étirement spaghettifié",
         anecdoteCorrect: "L'étirement spaghettifié est un phénomène où un objet se fait étirer de manière extrême en raison de la différence de force gravitationnelle entre sa partie proche et éloignée d'un trou noir.",
         anecdoteIncorrect: "La bonne réponse est l'étirement spaghettifié. Cet effet montre la puissance des forces gravitationnelles extrêmes à proximité des trous noirs.",
-        imageUrl:""
+        imageUrl:"27.jpg"
     },
     {
-        question: "Quel est l'âge estimé de l'univers ?",
-        choices: ["10 milliards d'années", "13,8 milliards d'années", "50 milliards d'années", "100 milliards d'années"],
-        correctAnswer: "13,8 milliards d'années",
-        anecdoteCorrect: "L'âge de l'univers, estimé à 13,8 milliards d'années, a été déterminé à partir de l'étude de l'expansion de l'univers et de l'observation de l'ancienne lumière laissée par le Big Bang.",
-        anecdoteIncorrect: "La bonne réponse est 13,8 milliards d'années. Cette estimation repose sur l'analyse de la radiation de fond cosmologique et la constante de Hubble.",
-        imageUrl: ""
-    },
+        question: "Quel est le nom de la première exoplanète découverte autour d'une étoile semblable au Soleil ?",
+        choices: ["Kepler-452b", "51 Pegasi b", "Proxima Centauri b", "TRAPPIST-1d"],
+        correctAnswer: "51 Pegasi b",
+        anecdoteCorrect: "51 Pegasi b, surnommée 'Bellerophon', a été la première exoplanète découverte autour d'une étoile de type solaire en 1995. Cette découverte a marqué un tournant majeur dans la recherche exoplanétaire.",
+        anecdoteIncorrect: "La bonne réponse est 51 Pegasi b. Il s'agit de la première exoplanète détectée autour d'une étoile semblable au Soleil, une découverte qui a ouvert la voie à la recherche d'exoplanètes habitables.",
+        imageUrl: "28.jpg"
+    }
     {
-        question: "Quel est le nom du phénomène où la lumière provenant d'un objet lointain est déviée par la gravité d'un objet massif, amplifiant ainsi l'image de l'objet derrière lui ?",
-        choices: ["Lentille gravitationnelle", "Effet Doppler", "Déflexion de la lumière", "Microlentille gravitationnelle"],
-        correctAnswer: "Lentille gravitationnelle",
-        anecdoteCorrect: "La lentille gravitationnelle est un phénomène prédit par la relativité générale, où un objet massif, comme un trou noir, dévie la lumière d'un objet plus lointain, permettant aux astronomes d'observer des objets distants ou de découvrir des galaxies inaccessibles.",
-        anecdoteIncorrect: "La bonne réponse est lentille gravitationnelle. Ce phénomène a été observé pour la première fois dans les années 1970 et est un outil essentiel pour l'étude de l'univers lointain.",
-        imageUrl: ""
+        question: "Quel est le nom du rayonnement émis par le fond diffus cosmologique, qui est l'une des premières traces de l'univers après le Big Bang ?",
+        choices: ["Rayonnement de Hawking", "Rayonnement thermique", "Rayonnement de fond cosmologique", "Rayonnement X"],
+        correctAnswer: "Rayonnement de fond cosmologique",
+        anecdoteCorrect: "Le rayonnement de fond cosmologique est une radiation électromagnétique uniformément répartie dans l'univers, témoin de l'état de l'univers lorsque celui-ci n'était encore qu'une soupe chaude et dense, juste après le Big Bang.",
+        anecdoteIncorrect: "La bonne réponse est le rayonnement de fond cosmologique. Il représente les premières empreintes laissées par l'univers après le Big Bang et est utilisé pour étudier l'évolution de l'univers.",
+        imageUrl: "29.jpg"
     }
 ];
 
