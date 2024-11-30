@@ -30,7 +30,7 @@ h1 {
 
 /* Style du logo */
 .logo {
-    width: 50px;
+    width: 80px;
     height: auto;
 }
 
@@ -106,13 +106,31 @@ main {
 }
 #question-image {
     display: block;
-    max-width: 100%;
-    height: auto;
+    max-width: 100%;  /* Limite la largeur au conteneur */
+    height: auto;  /* Garde la hauteur proportionnelle */
     margin: 20px auto;
-    border: 2px solid #ddd; /* Bordure discrète */
-    border-radius: 10px; /* Arrondi des bords */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;   /* Largeur de l'image */
 }
+
+/* Conteneur du cadre */
+#question-image-container {
+    width: 700px;
+    height: 500px; 
+    margin: 20px auto;  /* Espacement autour du cadre */
+    padding: 20px;      /* Espacement interne */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
 
 
 
@@ -222,22 +240,6 @@ button:hover {
 button:active {
     background-color: #388e3c; /* Couleur encore plus foncée quand on clique */
     transform: scale(1.05); /* Réduit légèrement la taille lors du clic */
-}
-
-button.level-1 {
-    background-color: #2196F3; /* Bleu */
-}
-
-button.level-2 {
-    background-color: #FF9800; /* Orange */
-}
-
-button.level-3 {
-    background-color: #f44336; /* Rouge */
-}
-
-button.level-1:hover, button.level-2:hover, button.level-3:hover {
-    transform: scale(1.1);
 }
 
 /* Footer */
