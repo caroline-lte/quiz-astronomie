@@ -419,7 +419,7 @@ let questionsLevel5 = [
         anecdoteCorrect: "51 Pegasi b, surnommée 'Bellerophon', a été la première exoplanète découverte autour d'une étoile de type solaire en 1995. Cette découverte a marqué un tournant majeur dans la recherche exoplanétaire.",
         anecdoteIncorrect: "La bonne réponse est 51 Pegasi b. Il s'agit de la première exoplanète détectée autour d'une étoile semblable au Soleil, une découverte qui a ouvert la voie à la recherche d'exoplanètes habitables.",
         imageUrl: "28.jpg"
-    }
+    },
     {
         question: "Quel est le nom du rayonnement émis par le fond diffus cosmologique, qui est l'une des premières traces de l'univers après le Big Bang ?",
         choices: ["Rayonnement de Hawking", "Rayonnement thermique", "Rayonnement de fond cosmologique", "Rayonnement X"],
