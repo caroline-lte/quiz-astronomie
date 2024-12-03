@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier des Événements Astronomiques</title>
+    <link rel="stylesheet" href="calendrier.css">
+    
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Calendrier des Événements Astronomiques</h1>
+        <a href="index.html" class="btn">Retour au Quiz</a>
+    </header>
+    
+    <main>
+        
+        <div id="calendar"></div>
+    </main>
+    <div id="evenements-astro">
+        <div class="container">
+          <ul>
+            <li>
+              <h3>☄️ Pic de pluie de météores</h3>
+              <p>Un événement où plusieurs météores, des débris cosmiques entrant dans l'atmosphère terrestre, peuvent être vus tomber en grande quantité dans le ciel à un moment donné. <br>Ce phénomène est généralement causé par la Terre traversant une zone dense de débris laissés par une comète.</p>
+            </li>
+            <li>
+              <h3>🌕 Pleine Lune</h3>
+              <p>La phase où la Lune est complètement éclairée par le Soleil, offrant une vue brillante de sa surface.<br>Cependant la pleine lune peut rendre l'observation difficile en éblouissant les étoiles faibles et les objets du ciel profond.</p>
+            </li>
+            <li>
+              <h3>🌑 Nouvelle Lune</h3>
+              <p>La phase où la Lune se trouve entre la Terre et le Soleil, rendant sa face éclairée invisible depuis la Terre.<br>C'est idéal pour observer des objets célestes moins lumineux, comme des galaxies et des nébuleuses. </p>
+            </li>
+            <li>
+              <h3>🌟 Conjonction</h3>
+              <p>Un événement où deux objets célestes, comme des planètes ou des étoiles, semblent se rapprocher dans le ciel depuis la Terre.<br> Cela permet d'observer ces objets sous un angle unique, souvent plus visible ou spectaculaire, et offre une opportunité pour la photographie ou l'observation avec un télescope.</p>
+            </li>
+            <li>
+                <h3>🌍 Périgée de la Lune</h3>
+                <p>Le périgée est le moment où la Lune est la plus proche de la Terre, ce qui la rend plus grande et plus brillante dans le ciel, offrant ainsi des conditions idéales pour l'observation.</p>
+              </li>
+            <li>
+              <h3>🪐 Opposition</h3>
+              <p>Lorsque une planète est en position opposée au Soleil dans le ciel, ce qui la rend parfaitement visible pendant la nuit.<br>cela permet de l'observer facilement, souvent à son éclat maximal, et est un moment idéal pour l'étudier ou la photographier.</p>
+            </li>
+            <li>
+              <h3>❄️ Solstice d'hiver</h3>
+              <p>Le moment où le Soleil atteint sa position la plus basse dans le ciel, marquant la nuit la plus longue de l'année et le début de l'hiver dans l'hémisphère nord.</p>
+            </li>
+            <li>
+                <h3>🌒 Éclipse Solaire Partielle</h3>
+                <p>Un événement où la Lune couvre partiellement le Soleil, offrant un spectacle fascinant, mais sans obscurcir totalement l'astre solaire.</p>
+              </li>              
+          </ul>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+</main>
+    
+    <footer>
+        <p>&copy; 2024 Astronomie Quizz</p>
+    </footer>
+
+    <!-- Script pour FullCalendar -->
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        events: [
+// Décembre 2024
+{ title: '🌕Pleine Lune', date: '2024-12-15' },
+{ title: '❄️Solstice d\'hiver', date: '2024-12-21' },
+{ title: '✨Conjonction \n     ~Mars~', date: '2024-12-17' },
+{ title: '🪐Opposition\n ~Jupiter~', date: '2024-12-07' },
+{ title: '☄️Pic de pluie de météores\n*Puppides*', date: '2024-12-04' },
+{ title: '☄️ Pic de pluie de météores\n*Les Géminides*', date: '2024-12-14' },
+{ title: '☄️Pic de pluie de météores \n*Géminides*', date: '2024-12-16' },
+{ title: '☄️Pic de pluie de météores\n *Géminides*', date: '2024-12-20' },
+{ title: '☄️Pic de pluie de météores\n *Ursides*', date: '2024-12-22' },
+{ title: '🌍Périgée de la Lune', date: '2024-12-14' },
+
+// Janvier 2025
+{ title: '🌕Pleine Lune', date: '2025-01-15' },
+{ title: '☄️Pic de pluie de météores\n*Quadrantides*', date: '2025-01-03' },
+{ title: '🌑Nouvelle Lune', date: '2025-01-29' },
+{ title: '🌍Périgée de la Lune', date: '2025-01-11' },
+
+// Février 2025
+{ title: '🌕Pleine Lune', date: '2025-02-15' },
+{ title: '☄️Pic de pluie de météores\n*Alpha Centaurides*', date: '2025-02-01' },
+{ title: '🌍Périgée de la Lune', date: '2025-02-09' },
+
+// Mars 2025
+{ title: '🌒Éclipse solaire partielle', date: '2025-03-29' },
+
+
+
+        ],
+        height: 'auto',
+        contentHeight: 'auto',
+        eventsSet: function() {
+            // Ajuster le contenu du calendrier pour éviter le débordement du texte
+            document.querySelectorAll('.fc-daygrid-event').forEach(function(event) {
+                event.style.whiteSpace = 'normal';   // Permet au texte de se diviser
+                event.style.wordWrap = 'break-word'; // Empêche le texte de déborder
+            });
+        }
+    });
+
+    calendar.render();
+});
+
+
+
+
+    </script>
+
+</body>
+</html>

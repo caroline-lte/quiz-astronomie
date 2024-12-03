@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/fondecran.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.7);
+    width: 100%;
+    gap: 20px; 
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+}
+
+header .btn {
+    display: inline-block;
+    background-color: rgb(206, 73, 95);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background-color: #d1006e;
+}
+
+
+main {
+    flex: 1; 
+    width: 80vw;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+
+
+#calendar {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
+    margin-top: 20px; 
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.fc-daygrid-event {
+    white-space: normal !important; 
+    word-wrap: break-word !important;
+    padding: 5px;
+    background-color: #474c51 !important;  
+    color: white !important;  
+    border-radius: 5px !important; 
+    padding: 5px !important; 
+}
+
+
+
+
+footer {
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.7);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto; 
+}
+#evenements-astro {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+  
+
+  
+  #evenements-astro ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #evenements-astro li {
+    margin-bottom: 20px;
+  }
+  
+  #evenements-astro li h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #f1f1f1;
+  }
+  
+  #evenements-astro li p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #dcdcdc;
+    margin-left: 10px;
+  }
+  
